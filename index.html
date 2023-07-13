@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <!-- Noto Sans Japanese 400 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
+  <!-- Roboto 900 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="content">
+        <a href="index.html"><div class="logo">
+          <img src="img/logo.svg" alt="">
+          <h1>myPortfolio</h1>
+        </div></a>
+        <ul class="navbar">
+          <li><a class="button" data-target="about">about</a></li>
+          <li><a class="button" data-target="works">works</a></li>
+          <li><a class="button" data-target="contact">contact</a></li>
+        </ul>
+        <div class="hamburger" style="display: none;">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav style="display: none;">
+        <ul>
+          <li><a class="button" data-target="about">about</a></li>
+          <li><a class="button" data-target="works">works</a></li>
+          <li><a class="button" data-target="contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="mainvisual">
+      <div class="content wrapper">
+        <div class="text">
+          <div class="name">
+            <img src="img/icon.jpg" alt="">
+            <h1>Okumura Daichi</h1>
+          </div>
+          <p class="title">Webエンジニアを目指して<br>日々勉強中のフリーターです</p>
+          <p class="subtitle">HTML/CSS, jQuery等の技術を<br>Youtube, Progate, Udemyなどの教材を利用して<br>独学で学んでいます。</p>
+          <ul>
+            <li><a class="button" data-target="works">作ったサイトを見る</a></li>
+            <li><a class="button" data-target="contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <img class="mainvisual" src="img/mainvisual.png" alt="">
+      </div>
+    </div>
+
+    <div id="pickup">
+      <ul class="wrapper">
+        <li><a href="http://lucciola.sakura.ne.jp/lucciola/index.html">
+          <img src="img/lucciola.png" alt="">
+        </a></li>
+        <li><a href="http://lucciola.sakura.ne.jp/urbaninn/index.html">
+          <img src="img/urbaninn.png" alt="">
+        </a></li>
+        <li><a href="">
+          <img src="img/codestep.png" alt="">
+        </a></li>
+
+      </ul>
+    </div>
+
+    <section id="about" class="wrapper">
+      <h2>about<span>自己紹介</span></h2>
+      <div class="content">
+        <div class="profile">
+          <div class="name">
+            <img src="img/icon.jpg" alt="">
+            <h1>Okumura Daichi</h1>
+          </div>
+          <h3>自分について</h3>
+          <p>
+            愛知県立松陰高校を２カ月で中退、高卒認定を取得後アルバイトをしながら英語やコーディング、資格の勉強をしています。<br>
+            age: 16
+          </p>
+          <h3>資格・試験</h3>
+          <p>
+            ・ ITパスポート 2021年8月<br>
+            ・ 高校卒業程度認定試験 2022年11月<br>
+            ・ 実用英語技能検定２級 2023年6月<br>
+          </p>
+          <h3>連絡先</h3>
+          <p>
+            email: <a href="mailto:okumuradaichi2007@gmail.com">okumuradaichi2007@gmail.com</a>
+          </p>
+        </div>
+        <div class="skills">
+          <h3>HTML/CSS</h3>
+          <p>
+            Progateから学習を初めて、色んなサイトの模写コーディングをたくさん繰り返して勉強しています。CSSはいつもSassを使って書いています。ほとんどのサイトはぱっと見るだけでコーディングの構造を理解できるようになってきました。
+          </p>
+          <h3>JS, jQuery</h3>
+          <p>
+            Progate,書籍などで学習しています、ハンバーガーメニューやアコーディオン等簡単なアニメーションの実装はできます。現在は様々なjQueryプラグインを触って学習しています。
+          </p>
+          <h3>Node.js, React</h3>
+          <p>Udemyの動画教材を購入して学習しています、書籍「Webを支える技術」を読んでhttp通信やRESTなどの面白さに惹かれて学習を始めました。現在はfirebaseを使ってデプロイが簡単そうなReactを勉強してtodoアプリなどを作ってみようと思って勉強してます。</p>
+          <h3>Webデザイン</h3>
+          <p>色んなサイトを見たり、模写コーディングをしたりオリジナルのサイトを作っている過程でWebでの様々な表現を勉強しています。今後はXDやPhotoshopなども勉強したいと思っています。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="wrapper">
+      <h2>works<span>作ったサイト</span></h2>
+      <ul>
+        <li class="work">
+          <img src="img/lucciola.png" alt="">
+          <div class="content">
+            <h3>ルシオラ野並（架空のショッピング施設ホームページ）</h3>
+            <p>
+              名鉄のミュープラットやJR東日本のアトレのような駅前商業施設をイメージしてサイトを作りました。<br>
+              レスポンシブ: スマートフォンのみ
+            </p>
+            <ul>
+              <li><a href="http://lucciola.sakura.ne.jp/lucciola/index.html">サイトを見る</a></li>
+              <li><a href="https://github.com/yamaneko05/Lucciola-nonami">GitHub</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="work">
+          <img src="img/urbaninn.png" alt="">
+          <div class="content">
+            <h3>URBAN INN 名古屋栄（架空のホテルのホームページ）</h3>
+            <p>
+              栄の中心部にあるカジュアルでシンプルなホテルをイメージして作りました。<br>
+              レスポンシブ: スマートフォンのみ
+            </p>
+            <ul>
+              <li><a href="http://lucciola.sakura.ne.jp/urbaninn/index.html">サイトを見る</a></li>
+              <li><a href="https://github.com/yamaneko05/URBAN-INN">GitHub</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="work">
+          <img src="img/codestep.png" alt="">
+          <div class="content">
+            <h3>（模写コーディング）CodeStepの模写コーディング</h3>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <ul>
+              <li><a href="">サイト一覧を見る</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="wrapper">
+      <h2>contact<span>連絡先</span></h2>
+      <div class="content">
+        <img src="img/contact.png" alt="">
+        <div class="text">
+          <p>Google Forms: </p>
+          <a href="https://forms.gle/smBvaQeCyJG8bsrA6">https://forms.gle/smBvaQeCyJG8bsrA6</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="content wrapper">
+      <a href="index.html"><div class="logo">
+        <img src="img/logo.svg" alt="">
+        <h1>myPortfolio</h1>
+      </div></a>
+      <ul>
+        <li><a class="button" data-target="about">about</a></li>
+        <li><a class="button" data-target="works">works</a></li>
+        <li><a class="button" data-target="contact">contact</a></li>
+      </ul>
+    </div>
+    <p class="copyright">© Okumura Daichi</p>
+  </footer>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
